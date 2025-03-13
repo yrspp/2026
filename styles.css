@@ -58,3 +58,14 @@ body{
     text-align: left;
     font-size: 100%;
 }
+
+.custom-btn {
+    background-color: #352D58; 
+    color: white; 
+    border: none;
+}
+
+.custom-btn:hover {
+    background-color: #272040;
+    color: white;
+}
