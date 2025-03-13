@@ -1,20 +1,43 @@
 @font-face {
-    font-family: "MyCustomFont";
+    font-family: "Sora";
     src: url("./fonts/sora.ttf");
+    
 }
 @font-face {
-    font-family: "Magistral";
-    src: url("./fonts/magistral.ttf");
+    font-family: "Sorabold";
+    src: url("./fonts/sora/Sora-Bold.ttf");
 }
+
+@font-face {
+    font-family: "Magistralbold";
+    src: url("./fonts/magistral/Magistral\ Bold.otf");
+}
+
 h1{
-    font-family: Magistral;
+    font-family: Magistralbold;
     color: #352D58;
+    font-size: 2.5em
+}
+
+h2{
+    font-family: Magistralbold;
+    color: #352D58;
+    font-size: 1.875em
+
+}
+
+h4{
+    font-family: Sora;
+    font-
+    color: #352D58;
+    font-size: 1.875em
 }
 
 body{
-    margin:20;
+    margin: 40;
     color: #272040;
     background: white;
     text-align: left;
     font-family: Sora;
+    font-size: 100%
 }
