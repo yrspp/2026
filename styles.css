@@ -1,5 +1,20 @@
+@font-face {
+    font-family: "MyCustomFont";
+    src: url("./fonts/sora.ttf");
+}
+@font-face {
+    font-family: "Magistral";
+    src: url("./fonts/magistral.ttf");
+}
+h1{
+    font-family: Magistral;
+    color: #352D58;
+}
+
 body{
-    margin: 0;
-    background: darkslateblue;
-    text-align: center;
+    margin:20;
+    color: #272040;
+    background: white;
+    text-align: left;
+    font-family: Sora;
 }
