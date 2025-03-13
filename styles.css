@@ -1,62 +1,60 @@
 @font-face {
     font-family: "Sora";
-    src: url("./fonts/sora.ttf");
+    font-weight: normal;
+    src: url("./fonts/sora/Sora-Regular.ttf");
     
 }
 @font-face {
-    font-family: "Sorabold";
-    src: url("./fonts/sora/Sora-Bold.ttf");
+    font-family: "Sora";
+    font-weight: bold;
+    src: url("./fonts/sora/Sora-SemiBold.ttf");
 }
-
 @font-face {
     font-family: "Magistralbold";
     src: url("./fonts/magistral/Magistral-Bold.otf") format("opentype");
 }
 
-h1{
+h1, h2, h3{
     font-family: Magistralbold;
     color: #352D58;
+}
+
+h1{
     font-size: 2.5em;
     margin-top: 0.5em
 }
 
 h2{
-    font-family: Magistralbold;
-    color: #352D58;
     font-size: 1.875em;
     margin-top: 1.2em;
     margin-bottom: 0.5em;
-
 }
 
 h3{
-    font-family: Magistralbold;
-    color: #352D58;
     font-size: 1.2em;
 }
 
-h4{
-    font-family: Sorabold;
+h4, h5{
+    font-family: Sora;
     color: #352D58;
+}
+h4{
     font-size: 1em;
 }
 
 h5{
-    font-family: Sorabold;
-    color: #352D58;
+    font-size: 1em;
     text-align: center;
     margin-left: 3em;
     margin-right: 3em;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-    font-size: 1em;
 }
 
 body{
-    margin: 5%;
+    font-family: Sora;
     color: #272040;
     background: white;
     text-align: left;
-    font-family: Sora;
     font-size: 100%;
 }
