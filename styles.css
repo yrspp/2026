@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: "Magistralbold";
-    src: url("./fonts/magistral/Magistral-Bold.otf");
+    src: url("./fonts/magistral/Magistral-Bold.otf") format("opentype");
 }
 
 h1{
