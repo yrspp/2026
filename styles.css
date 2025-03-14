@@ -2,52 +2,61 @@
     font-family: "Sora";
     font-weight: normal;
     src: url("./fonts/sora/Sora-Regular.ttf");
-    
+
 }
+
 @font-face {
     font-family: "Sora";
     font-weight: bold;
     src: url("./fonts/sora/Sora-SemiBold.ttf");
 }
+
 @font-face {
     font-family: "Magistralbold";
     src: url("./fonts/magistral/Magistral-Bold.otf") format("opentype");
 }
+
 @font-face {
     font-family: "Magistralblack";
     src: url("./fonts/magistral/Magistral-Black.otf") format("opentype");
 }
 
-h1, h2, h3{
+/* Headings */
+
+h1,
+h2,
+h3 {
     font-family: Magistralbold;
     color: #352D58;
 }
 
-h1{
+h1 {
     font-size: 2.5em;
     margin-top: 0.5em
 }
 
-h2{
+h2 {
     font-size: 1.875em;
     margin-top: 1.2em;
     margin-bottom: 0.5em;
 }
 
-h3{
+h3 {
     font-size: 1.2em;
 }
 
-h4, h5{
+h4,
+h5 {
     font-family: Sora;
     color: #352D58;
     font-size: 1em;
 }
-h4{
+
+h4 {
     font-weight: bold;
 }
 
-h5{
+h5 {
     font-size: 1em;
     text-align: center;
     margin-left: 3em;
@@ -56,7 +65,9 @@ h5{
     margin-bottom: 1.5em;
 }
 
-body{
+/* Body text */
+
+body {
     font-family: Sora;
     color: #272040;
     background: white;
@@ -64,11 +75,35 @@ body{
     font-size: 100%;
 }
 
+/* Anchors */
+
+a {
+    text-decoration: none;
+    /* Removes underline */
+    color: #272040;
+}
+
+a i {
+    vertical-align: -2;
+}
+
+.bi {
+    font-size: 24px;
+    /* Works for Bootstrap icons */
+
+}
+
+/* Buttons */
+
+.custom-btn,
+.custom-btn-light {
+    margin: 0.4em
+}
+
 .custom-btn {
-    background-color: #352D58; 
-    color: white; 
+    background-color: #352D58;
+    color: white;
     border: none;
-    margin: 0.3em
 }
 
 .custom-btn:hover {
@@ -76,10 +111,26 @@ body{
     color: white;
 }
 
+.custom-btn-light {
+    border: 1px solid #352D58;
+    color: #352D58;
+}
+
+.custom-btn-light:hover {
+    background-color: #352D58;
+    border: 1px solid #352D58;
+    color: white;
+}
+
 .custom-title {
     font-family: Magistralblack;
     color: #352D58;
     font-size: 1.5em;
-    line-height: 1.3em;
-    margin-top: 0.5em;
+    margin-top: 1em;
+}
+
+.stack-vertically {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
