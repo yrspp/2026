@@ -135,3 +135,29 @@ a i {
     flex-direction: column;
     align-items: center;
 }
+
+/* Navbar */
+
+.navbar-custom {
+    background-color: white;
+}
+
+.nav-link {
+    color: #352D58;
+}
+
+.navbar-custom .nav-link.active,
+.navbar-custom .nav-link.active:hover {
+    color: #272040;
+    font-weight: bold;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #3B8C41;
+}
+
+.navbar-custom .navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
