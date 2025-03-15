@@ -96,6 +96,10 @@ body {
     /* Aligns the content to the left and right */
 }
 
+.container-sm {
+    max-width: 1000px;
+}
+
 .container-sm img {
     margin-left: 20px;
     /* Adds space between the text and the image */
@@ -159,6 +163,7 @@ a i {
     background-color: #352D58;
     color: white;
     border: none;
+    margin-right: 1rem;
 }
 
 .navbar-btn:hover{
