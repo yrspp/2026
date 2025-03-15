@@ -66,6 +66,17 @@ h5 {
     margin-bottom: 1.5em;
 }
 
+/* Flexboxes */
+
+.social-icons i {
+    color: black; /* Adjust icon color */
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icons i:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
 /* Body text */
 
 body {
@@ -89,16 +100,13 @@ body {
 }
 
 /* Footer */
-footer {
-    padding-bottom: 3em;
-}
 
 /* Media */
 
 img {
     max-width: 20em;
     height: auto;
-  }
+}
 
 .image-container img {
     max-width: 100%;
@@ -147,7 +155,8 @@ a i {
 
 .custom-btn,
 .custom-btn-light {
-    margin: 0.4em
+margin-top: 5;
+    margin-bottom: 8;
 }
 
 .custom-btn {
@@ -170,6 +179,10 @@ a i {
     background-color: #352D58;
     border: 1px solid #352D58;
     color: white;
+}
+
+.email-btn:hover{
+    text-decoration: underline;
 }
 
 .custom-title {
