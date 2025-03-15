@@ -40,14 +40,19 @@
     </nav>
 
     <div
-        style="background-image: url('./assets/seedlings.jpg'); background-size: cover; background-position: center; padding-top: 0.2em; padding-bottom: 0.2em;">
-        <div class="container custom-title text-center">
+        style="background-image: url('./assets/seedlings.jpg'); background-size: cover; background-position: center; padding-top: 0.2em; padding-bottom: 0.2em; position:relative">
+        <div
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.7); z-index: 1;">
+        </div>
+
+        <div class="container custom-title text-center" style="position:relative; z-index:2;">
             <img src="./assets/YRSPP 2026 logo dark.png" width="60%" height="auto" alt="YRSPP 2026 logo">
         </div>
-        <div class="custom-title text-center">
+        <div class="custom-title text-center" style="position:relative; z-index:2; ">
             <p>The Young Researchers' Symposium on Plant Photobiology</p>
         </div>
-        <h5><b>Wednesday 15<sup>th</sup> to Saturday 18<sup>th</sup> April 2026</b></h5>
+        <h5 style="position:relative; z-index:2"><b>Wednesday 15<sup>th</sup> to Saturday 18<sup>th</sup> April 2026</b></h5>
+
     </div>
 
     <div class="container-sm">
@@ -102,7 +107,8 @@
         </p>
 
         <div class="col text-center stack-vertically">
-            <a class="btn custom-btn email-btn" href="mailto:yrspp.mail@gmail.com" role="button">yrspp.mail@gmail.com</a>
+            <a class="btn custom-btn email-btn" href="mailto:yrspp.mail@gmail.com"
+                role="button">yrspp.mail@gmail.com</a>
             </a>
         </div>
     </div>
