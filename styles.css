@@ -69,12 +69,14 @@ h5 {
 /* Flexboxes */
 
 .social-icons i {
-    color: black; /* Adjust icon color */
+    color: black;
+    /* Adjust icon color */
     transition: transform 0.2s ease-in-out;
 }
 
 .social-icons i:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1);
+    /* Slight zoom effect on hover */
 }
 
 /* Body text */
@@ -104,7 +106,7 @@ body {
 /* Media */
 
 .navbar-brand img {
-    width: 20%;
+    height: 1rem;
     height: auto;
 }
 
@@ -155,7 +157,7 @@ a i {
 
 .custom-btn,
 .custom-btn-light {
-margin-top: 5;
+    margin-top: 5;
     margin-bottom: 8;
 }
 
@@ -181,7 +183,7 @@ margin-top: 5;
     color: white;
 }
 
-.email-btn:hover{
+.email-btn:hover {
     text-decoration: underline;
 }
 
@@ -201,7 +203,10 @@ margin-top: 5;
 /* Navbar */
 
 .navbar-brand {
-    padding-left: 1em;
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
 }
 
 .navbar-custom {
