@@ -88,6 +88,10 @@ body {
     /* Adds space between the text and the image */
 }
 
+/* Footer */
+footer {
+    padding-bottom: 3em;
+}
 
 /* Media */
 
@@ -98,17 +102,24 @@ body {
     margin: 0;
 }
 
-@media (min-width: 768px) {  /* This applies when screen width is 768px or larger */
+@media (min-width: 768px) {
+
+    /* This applies when screen width is 768px or larger */
     .image-container img {
-        padding-left: 1rem; /* Add padding when text is on the left */
+        padding-left: 1rem;
+        /* Add padding when text is on the left */
     }
 }
 
-@media (max-width: 767px) {  /* This applies when screen width is 767px or smaller */
+@media (max-width: 767px) {
+
+    /* This applies when screen width is 767px or smaller */
     .image-container img {
-        padding-left: 0;  /* Remove padding when text is below the image */
+        padding-left: 0;
+        /* Remove padding when text is below the image */
     }
 }
+
 /* Anchors */
 
 a {
