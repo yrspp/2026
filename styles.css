@@ -155,10 +155,20 @@ a i {
 
 /* Buttons */
 
+.navbar-btn {
+    background-color: #352D58;
+    color: white;
+    border: none;
+}
+
+.navbar-btn:hover{
+    background-color: #3B8C41;
+    color: white;
+}
 .custom-btn,
 .custom-btn-light {
     margin-top: 5;
-    margin-bottom: 8;
+    margin-bottom: 20;
 }
 
 .custom-btn {
