@@ -103,6 +103,11 @@ body {
 
 /* Media */
 
+.navbar-brand img {
+    width: 20%;
+    height: auto;
+}
+
 .image-container img {
     max-width: 100%;
     border: none;
