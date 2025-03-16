@@ -149,7 +149,7 @@ a i {
 
 .custom-btn,
 .custom-btn-light {
-   margin-top: 1rem; 
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -329,7 +329,17 @@ a i {
 
 .socials-box-item {
     height: 90%;
-    width: 150px;
+    width: 125px;
     text-align: center;
     /* border: 2px solid black; */
+}
+
+/* Media query for small screens */
+@media (max-width: 270px) {
+    .socials-box-outer {
+        flex-direction: column;
+        /* Stack the items vertically */
+        gap: 20px;
+        /* Adjust space between items if needed */
+    }
 }
