@@ -66,6 +66,16 @@ h5 {
     margin-bottom: 1.5em;
 }
 
+/* Body text */
+
+body {
+    font-family: Sora;
+    color: #272040;
+    background: white;
+    text-align: left;
+    font-size: 100%;
+}
+
 /* Flexboxes */
 
 .social-icons i {
@@ -79,22 +89,14 @@ h5 {
     /* Slight zoom effect on hover */
 }
 
-/* Body text */
-
-body {
-    font-family: Sora;
-    color: #272040;
-    background: white;
-    text-align: left;
-    font-size: 100%;
-}
-
 .centred-flexbox {
     display: flex;
     align-items: center;
     justify-content: space-between;
     /* Aligns the content to the left and right */
 }
+
+/* Containers */
 
 .container-sm {
     max-width: 1000px;
@@ -105,13 +107,22 @@ body {
     /* Adds space between the text and the image */
 }
 
-/* Footer */
+/* Flexbox */
 
-/* Media */
 
-.navbar-brand img {
-    height: 1rem;
-    height: auto;
+.text-flexbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Create 2 equal-width columns */
+    column-gap: 40px;
+    /* Adjust the gap between the columns */
+}
+
+@media (max-width: 400px) {
+    .text-flexbox {
+        grid-template-columns: 1fr;
+        /* Stack in 1 column on smaller screens */
+    }
 }
 
 .image-container img {
@@ -121,22 +132,12 @@ body {
     margin: 0;
 }
 
-@media (min-width: 768px) {
+/* button flexbox */
 
-    /* This applies when screen width is 768px or larger */
-    .image-container img {
-        padding-left: 1rem;
-        /* Add padding when text is on the left */
-    }
-}
-
-@media (max-width: 767px) {
-
-    /* This applies when screen width is 767px or smaller */
-    .image-container img {
-        padding-left: 0;
-        /* Remove padding when text is below the image */
-    }
+.stack-vertically {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Anchors */
@@ -166,10 +167,11 @@ a i {
     margin-right: 1rem;
 }
 
-.navbar-btn:hover{
+.navbar-btn:hover {
     background-color: #3B8C41;
     color: white;
 }
+
 .custom-btn,
 .custom-btn-light {
     margin-top: 5;
@@ -209,13 +211,12 @@ a i {
     margin-top: 1em;
 }
 
-.stack-vertically {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 /* Navbar */
+
+.navbar-brand img {
+    height: 1rem;
+    height: auto;
+}
 
 .navbar-brand {
     display: flex;
@@ -255,15 +256,17 @@ a i {
 #page-container {
     position: relative;
     min-height: 100vh;
-  }
-  
-  #content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
-  }
-  
-  #footer {
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+    /* Footer height */
+}
+
+#footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;            /* Footer height */
-  }
+    height: 2.5rem;
+    /* Footer height */
+}
