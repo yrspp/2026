@@ -241,56 +241,25 @@ a i {
 }
 
 
-@media (max-width: 700px) {
-    .text-flexbox {
-        grid-template-columns: 1fr;
-        /* Stack in 1 column on smaller screens */
-    }
-}
-
-@media (max-width: 400px) {
-    .navbar-collapse {
+/* For the collapsed state (burger view) */
+@media (max-width:600px) {
+    .navbar-nav {
+        display: flex;
         text-align: right;
-        /* Align the items to the right */
+        flex-direction: column;
+        /* Stack items vertically */
+        margin-right: 1em;
     }
 
-    .navbar-nav {
-        /* Add a little top margin to the links */
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .nav-item {
-        margin-left: 0;
-        margin-right: 0;
-        /* Add spacing between items if necessary */
-    }
-
-    .navbar-nav .nav-link {
-        padding-right: 20px;
-        /* Add padding to space out links */
-        padding-left: 20px;
-    }
-
-    /* Button styling */
-    .navbar-nav .btn {
-        margin-left: 0;
-        margin-right: 20px;
-        /* Add some space on the right side of the button */
+    .navbar-btn {
+        background-color: #352D58;
+        color: white;
+        border: none;
+        margin-right: -0.3em;
+        margin-top: 6px;
+        margin-bottom: 10px
     }
 }
-
-
-@media (min-width: 768px) {
-
-    /* For larger screens, ensure the navbar is fully aligned */
-    .navbar-nav {
-        margin-left: auto;
-    }
-}
-
-
-
 
 /* Footer */
 #page-container {
@@ -329,7 +298,7 @@ a i {
 
 .socials-box-item {
     height: 90%;
-    width: 125px;
+    width: 115px;
     text-align: center;
     /* border: 2px solid black; */
 }
