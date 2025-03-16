@@ -119,6 +119,12 @@ small {
     margin: 0;
 }
 
+@media (max-width: 600px) {
+    .text-flexbox {
+        grid-template-columns: 1fr
+    }
+}
+
 /* button flexbox */
 
 .stack-vertically {
