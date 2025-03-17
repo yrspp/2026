@@ -37,12 +37,13 @@ h1 {
 
 h2 {
     font-size: 1.875em;
-    margin-top: 0.8em;
+    margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
 
 h3 {
     font-size: 1.2em;
+    margin-top: 1em
 }
 
 h4,
@@ -110,11 +111,6 @@ small {
     max-width: 1000px;
 }
 
-.container-sm img {
-    margin-left: 20px;
-    /* Adds space between the text and the image */
-}
-
 /* Flexbox */
 
 
@@ -169,8 +165,8 @@ a i {
 
 .custom-btn,
 .custom-btn-light {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
 }
 
 .custom-btn {
@@ -276,13 +272,17 @@ a i {
         /* Stack items vertically */
         margin-right: 1em;
     }
-@media (max-width: 600px) {
-    .navbar-collapse {
-        background-color: white; /* Change this to your preferred color */
-        border: none;
-        padding: 1em; /* Add padding if needed */
+
+    @media (max-width: 600px) {
+        .navbar-collapse {
+            background-color: white;
+            /* Change this to your preferred color */
+            border: none;
+            padding: 1em;
+            /* Add padding if needed */
+        }
     }
-}
+
     .navbar-btn {
         background-color: #352D58;
         color: white;
@@ -299,11 +299,6 @@ a i {
     min-height: 100vh;
 }
 
-#content-wrap {
-    padding-bottom: 2.5rem;
-    /* Footer height */
-}
-
 #footer {
     position: absolute;
     bottom: 0;
@@ -317,23 +312,56 @@ a i {
 .socials-container {
     display: flex;
     justify-content: center;
-    /* Centers horizontally */
     align-items: center;
-    /* Centers vertically */
+    margin-top: 1rem;
+    /* border: 2px solid black; */
 }
 
 .socials-box-outer {
     align-items: center;
     display: flex;
-    /* border: 2px solid rgb(55, 139, 22); */
+    gap: 5px;
+    /* border: 2px solid blue; */
 }
 
 .socials-box-item {
     height: 90%;
-    width: 115px;
+    width: 118px;
     text-align: center;
+    /* border: 2px solid red; */
+}
+
+/* Sponsors box */
+.sponsors-container {
+    display: flex;
+    justify-content: center;
     /* border: 2px solid black; */
 }
+
+.sponsors-box-outer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3em;
+    row-gap: 1em;
+    width: 90%;
+    /* border: 2px solid blue; */
+}
+
+.sponsors-box-item {
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.sponsorlogo-2 {
+    width: 16rem;
+}
+
+.sponsorlogo-3 {
+    width: 6rem;
+}
+
 
 /* Media query for small screens */
 @media (max-width: 270px) {
