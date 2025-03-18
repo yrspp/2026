@@ -32,7 +32,6 @@ h3 {
 
 h1 {
     font-size: 2.8em;
-    margin-top: 1em
 }
 
 h2 {
@@ -96,13 +95,15 @@ small {
 }
 
 /* Page header bars  */
-.header-image {
+.header-image-flexbox {
     position: relative;
     z-index: 0;
     background-size: cover;
     background-position: center;
-        border: 2px solid black;
-
+    min-height: 10rem;
+    display: flex;
+    align-items: end;
+    /* border: 2px solid black; */
 }
 
 .white-overlay {
@@ -111,17 +112,14 @@ small {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.7);
-    border: 2px solid black;
-
 }
 
-.header-text {
-    display: flex;
+.header-textbox {
     position: relative;
-    align-items: flex-end;
     z-index: 2;
-    min-height: 10rem;
-    border: 2px solid black;
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    border: 2px solid red;
 }
 
 /* Flexboxes */
