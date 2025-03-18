@@ -112,6 +112,7 @@ small {
 }
 
 .header-text {
+    display: flex;
     position: relative;
     z-index: 2;
     min-height: 10rem;
