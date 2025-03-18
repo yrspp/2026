@@ -117,9 +117,9 @@ small {
 .header-textbox {
     position: relative;
     z-index: 2;
-    padding-top:0.5rem;
-    padding-bottom: 0.5rem;
-    border: 2px solid red;
+    padding-top:0.75rem;
+    padding-bottom: 0.75rem;
+    /* border: 2px solid red; */
 }
 
 /* Flexboxes */
