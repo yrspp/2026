@@ -88,9 +88,15 @@ small {
     z-index: 0;
     background-size: cover;
     background-position: center;
-    min-height: 10rem;
+    min-height: 16rem;
     display: flex;
     /* border: 2px solid black; */
+}
+
+@media (max-height: 600px) {
+    .header-image-flexbox {
+        min-height: 10rem
+    }
 }
 
 .header-image-flexbox {
@@ -130,7 +136,7 @@ small {
 
 .title-logo {
     width: 80%;
-    padding-left:3%;
+    padding-left: 3%;
     /* border: 2px solid blue; */
 }
 
