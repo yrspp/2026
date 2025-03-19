@@ -363,7 +363,7 @@ a i {
     justify-content: center;
     display: flex;
     gap: 5px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .socials-box-item {
