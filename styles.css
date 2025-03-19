@@ -123,13 +123,14 @@ small {
     z-index: 2;
     padding: 0rem;
     margin-block: 1rem;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 /* Front page logo */
 
 .title-logo {
     width: 80%;
+    padding-left:3%;
     /* border: 2px solid blue; */
 }
 
